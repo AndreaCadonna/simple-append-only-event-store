@@ -10,13 +10,13 @@
 
 - **Wave 0 (Setup)**: ✅ 1/1 Complete
 - **Wave 1 (Foundations)**: ✅ 3/3 Complete
-- **Wave 2 (Core Components)**: 🔄 1/2 In Progress
+- **Wave 2 (Core Components)**: ✅ 2/2 Complete
 - **Wave 3 (Integration)**: ⬜ 0/1 Complete
 - **Wave 4 (Domain Logic)**: ⬜ 0/2 Complete
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 5/12 tasks complete (42%)
+**Overall Progress**: 6/12 tasks complete (50%)
 
 ---
 
@@ -134,26 +134,26 @@
 
 ---
 
-### ⬜ Task 5: Index Implementation
+### ✅ Task 5: Index Implementation
 **Complexity**: Medium
 **Dependencies**: Task 1
 **Can Start**: After Task 1 completes (parallel with Task 4)
 
 **Deliverables**:
-- [ ] Implement `Index` struct with `map[string][]int`
-- [ ] Implement `BuildFromEvents()`
-- [ ] Implement `AddEvent()`
-- [ ] Implement `GetStreamSequences()` and `GetStreamVersion()`
-- [ ] Add RWMutex for concurrent access
-- [ ] Write unit tests
+- [x] Implement `Index` struct with `map[string][]int`
+- [x] Implement `BuildFromEvents()`
+- [x] Implement `AddEvent()`
+- [x] Implement `GetStreamSequences()` and `GetStreamVersion()`
+- [x] Add RWMutex for concurrent access
+- [x] Write unit tests
 
 **Files Created**:
 - `pkg/eventstore/index.go`
 - `pkg/eventstore/index_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22 (Task 4 DiskStorage completed)
+**Last Updated**: 2026-01-22 (Wave 2 Complete: Tasks 4-5 DiskStorage & Index)

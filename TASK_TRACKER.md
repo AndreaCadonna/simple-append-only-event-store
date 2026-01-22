@@ -11,12 +11,12 @@
 - **Wave 0 (Setup)**: ✅ 1/1 Complete
 - **Wave 1 (Foundations)**: ✅ 3/3 Complete
 - **Wave 2 (Core Components)**: ✅ 2/2 Complete
-- **Wave 3 (Integration)**: ⬜ 0/1 Complete
+- **Wave 3 (Integration)**: ✅ 1/1 Complete
 - **Wave 4 (Domain Logic)**: ⬜ 0/2 Complete
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 6/12 tasks complete (50%)
+**Overall Progress**: 7/12 tasks complete (58%)
 
 ---
 
@@ -159,27 +159,27 @@
 
 ## Wave 3: Integration Layer
 
-### ⬜ Task 6: EventStore Coordinator
+### ✅ Task 6: EventStore Coordinator
 **Complexity**: High
 **Dependencies**: Tasks 1, 4, 5
 **Can Start**: After Tasks 1, 4, 5 complete
 
 **Deliverables**:
-- [ ] Define `EventStore` interface
-- [ ] Implement coordinator struct with DiskStorage and Index
-- [ ] Implement `NewEventStore()` with initialization and reload
-- [ ] Implement `Append()` with concurrency control
-- [ ] Implement `GetStream()` and `GetAllEvents()`
-- [ ] Write unit tests and integration tests
+- [x] Define `EventStore` interface
+- [x] Implement coordinator struct with DiskStorage and Index
+- [x] Implement `NewEventStore()` with initialization and reload
+- [x] Implement `Append()` with concurrency control
+- [x] Implement `GetStream()` and `GetAllEvents()`
+- [x] Write unit tests and integration tests
 
 **Files Created**:
 - `pkg/eventstore/store.go`
 - `pkg/eventstore/store_test.go`
 - `pkg/eventstore/integration_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22 (Wave 2 Complete: Tasks 4-5 DiskStorage & Index)
+**Last Updated**: 2026-01-22 (Wave 3 Complete: Task 6 EventStore Coordinator)

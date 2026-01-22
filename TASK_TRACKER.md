@@ -9,14 +9,14 @@
 ## Progress Overview
 
 - **Wave 0 (Setup)**: ✅ 1/1 Complete
-- **Wave 1 (Foundations)**: ⬜ 0/3 Complete
+- **Wave 1 (Foundations)**: ✅ 3/3 Complete
 - **Wave 2 (Core Components)**: ⬜ 0/2 Complete
 - **Wave 3 (Integration)**: ⬜ 0/1 Complete
 - **Wave 4 (Domain Logic)**: ⬜ 0/2 Complete
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 1/12 tasks complete (8%)
+**Overall Progress**: 4/12 tasks complete (33%)
 
 ---
 
@@ -48,64 +48,64 @@
 
 ## Wave 1: Foundations (Parallel)
 
-### ⬜ Task 1: Event Structure
+### ✅ Task 1: Event Structure
 **Complexity**: Low
 **Dependencies**: Task 0
 **Can Start**: After Task 0
 
 **Deliverables**:
-- [ ] Define `Event` struct with all fields
-- [ ] Implement `NewEvent()` constructor with validation
-- [ ] Implement JSON marshaling/unmarshaling
-- [ ] Write unit tests
+- [x] Define `Event` struct with all fields
+- [x] Implement `NewEvent()` constructor with validation
+- [x] Implement JSON marshaling/unmarshaling
+- [x] Write unit tests
 
 **Files Created**:
 - `pkg/eventstore/event.go`
 - `pkg/eventstore/event_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
-### ⬜ Task 2: Bank Event Definitions
+### ✅ Task 2: Bank Event Definitions
 **Complexity**: Low
 **Dependencies**: Task 0
 **Can Start**: After Task 0 (parallel with Task 1)
 
 **Deliverables**:
-- [ ] Define event type constants (AccountOpened, MoneyDeposited, MoneyWithdrawn)
-- [ ] Define event data structs
-- [ ] Write JSON marshaling tests
+- [x] Define event type constants (AccountOpened, MoneyDeposited, MoneyWithdrawn)
+- [x] Define event data structs
+- [x] Write JSON marshaling tests
 
 **Files Created**:
 - `pkg/domain/bank/events.go`
 - `pkg/domain/bank/events_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
-### ⬜ Task 3: CLI Skeleton
+### ✅ Task 3: CLI Skeleton
 **Complexity**: Low
 **Dependencies**: Task 0
 **Can Start**: After Task 0 (parallel with Tasks 1, 2)
 
 **Deliverables**:
-- [ ] Create CLI entry point with command parsing
-- [ ] Define command structure (append, get-stream, get-all, bank)
-- [ ] Add stub handlers that print "Not implemented"
-- [ ] Add `--data-dir` flag
+- [x] Create CLI entry point with command parsing
+- [x] Define command structure (append, get-stream, get-all, bank)
+- [x] Add stub handlers that print "Not implemented"
+- [x] Add `--data-dir` flag
 
 **Files Created**:
 - `cmd/eventstore/main.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 

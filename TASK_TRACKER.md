@@ -10,13 +10,13 @@
 
 - **Wave 0 (Setup)**: ✅ 1/1 Complete
 - **Wave 1 (Foundations)**: ✅ 3/3 Complete
-- **Wave 2 (Core Components)**: ⬜ 0/2 Complete
+- **Wave 2 (Core Components)**: 🔄 1/2 In Progress
 - **Wave 3 (Integration)**: ⬜ 0/1 Complete
 - **Wave 4 (Domain Logic)**: ⬜ 0/2 Complete
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 4/12 tasks complete (33%)
+**Overall Progress**: 5/12 tasks complete (42%)
 
 ---
 
@@ -111,26 +111,26 @@
 
 ## Wave 2: Core Components (Parallel)
 
-### ⬜ Task 4: DiskStorage Implementation
+### ✅ Task 4: DiskStorage Implementation
 **Complexity**: Medium
 **Dependencies**: Task 1
 **Can Start**: After Task 1 completes
 
 **Deliverables**:
-- [ ] Implement `DiskStorage` struct
-- [ ] Implement `Append()` with file format [4-byte length][JSON]
-- [ ] Implement `ReadAll()` to parse entire log file
-- [ ] Add mutex for thread safety
-- [ ] Add `file.Sync()` for durability
-- [ ] Write unit tests
+- [x] Implement `DiskStorage` struct
+- [x] Implement `Append()` with file format [4-byte length][JSON]
+- [x] Implement `ReadAll()` to parse entire log file
+- [x] Add mutex for thread safety
+- [x] Add `file.Sync()` for durability
+- [x] Write unit tests
 
 **Files Created**:
 - `pkg/eventstore/storage.go`
 - `pkg/eventstore/storage_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22
+**Last Updated**: 2026-01-22 (Task 4 DiskStorage completed)

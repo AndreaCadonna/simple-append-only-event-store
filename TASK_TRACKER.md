@@ -12,11 +12,11 @@
 - **Wave 1 (Foundations)**: ✅ 3/3 Complete
 - **Wave 2 (Core Components)**: ✅ 2/2 Complete
 - **Wave 3 (Integration)**: ✅ 1/1 Complete
-- **Wave 4 (Domain Logic)**: 🔄 1/2 In Progress
+- **Wave 4 (Domain Logic)**: ✅ 2/2 Complete
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 8/12 tasks complete (67%)
+**Overall Progress**: 9/12 tasks complete (75%)
 
 ---
 
@@ -206,25 +206,25 @@
 
 ---
 
-### ⬜ Task 8: Bank Commands (Business Logic)
+### ✅ Task 8: Bank Commands (Business Logic)
 **Complexity**: Medium
 **Dependencies**: Tasks 2, 7
 **Can Start**: After Tasks 2, 7 complete
 
 **Deliverables**:
-- [ ] Implement `OpenAccount()` with validation
-- [ ] Implement `Deposit()` with validation
-- [ ] Implement `Withdraw()` with balance check
-- [ ] Implement `GetBalance()`
-- [ ] Write unit tests
+- [x] Implement `OpenAccount()` with validation
+- [x] Implement `Deposit()` with validation
+- [x] Implement `Withdraw()` with balance check
+- [x] Implement `GetBalance()`
+- [x] Write unit tests
 
 **Files Created**:
 - `pkg/domain/bank/commands.go`
 - `pkg/domain/bank/commands_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22 (Task 7 Complete: Bank Account Aggregate - 67% overall)
+**Last Updated**: 2026-01-22 (Wave 4 Complete: Bank Domain - 75% overall)

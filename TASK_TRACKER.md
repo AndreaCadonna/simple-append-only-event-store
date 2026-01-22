@@ -12,11 +12,11 @@
 - **Wave 1 (Foundations)**: ✅ 3/3 Complete
 - **Wave 2 (Core Components)**: ✅ 2/2 Complete
 - **Wave 3 (Integration)**: ✅ 1/1 Complete
-- **Wave 4 (Domain Logic)**: ⬜ 0/2 Complete
+- **Wave 4 (Domain Logic)**: 🔄 1/2 In Progress
 - **Wave 5 (User Interface)**: ⬜ 0/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 7/12 tasks complete (58%)
+**Overall Progress**: 8/12 tasks complete (67%)
 
 ---
 
@@ -185,24 +185,24 @@
 
 ## Wave 4: Domain Logic (Parallel)
 
-### ⬜ Task 7: Bank Account Aggregate
+### ✅ Task 7: Bank Account Aggregate
 **Complexity**: Medium
 **Dependencies**: Tasks 2, 6
 **Can Start**: After Tasks 2 and 6 complete
 
 **Deliverables**:
-- [ ] Define `BankAccount` struct
-- [ ] Implement `ApplyEvent()` with event type switching
-- [ ] Implement `ReplayAccount()` to rebuild state
-- [ ] Write unit tests
+- [x] Define `BankAccount` struct
+- [x] Implement `ApplyEvent()` with event type switching
+- [x] Implement `ReplayAccount()` to rebuild state
+- [x] Write unit tests
 
 **Files Created**:
 - `pkg/domain/bank/account.go`
 - `pkg/domain/bank/account_test.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-22
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22 (Wave 3 Complete: Task 6 EventStore Coordinator)
+**Last Updated**: 2026-01-22 (Task 7 Complete: Bank Account Aggregate - 67% overall)

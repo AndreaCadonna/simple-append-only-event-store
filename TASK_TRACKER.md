@@ -14,9 +14,9 @@
 - **Wave 3 (Integration)**: ✅ 1/1 Complete
 - **Wave 4 (Domain Logic)**: ✅ 2/2 Complete
 - **Wave 5 (User Interface)**: ✅ 1/1 Complete
-- **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
+- **Wave 6 (Testing & Docs)**: ✅ 1/2 Complete
 
-**Overall Progress**: 10/12 tasks complete (83%)
+**Overall Progress**: 11/12 tasks complete (92%)
 
 ---
 
@@ -253,26 +253,26 @@
 
 ## Wave 6: Testing & Documentation
 
-### ⬜ Task 10: Integration Testing
+### ✅ Task 10: Integration Testing
 **Complexity**: Medium
 **Dependencies**: Task 9
 **Can Start**: After Task 9 completes
 
 **Deliverables**:
-- [ ] Write EventStore integration tests
-- [ ] Write Bank domain integration tests
-- [ ] Create CLI test bash script
-- [ ] Verify persistence across restarts
-- [ ] Test concurrent access
+- [x] Write EventStore integration tests
+- [x] Write Bank domain integration tests
+- [x] Create CLI test bash script
+- [x] Verify persistence across restarts
+- [x] Test concurrent access
 
 **Files Created**:
-- `pkg/eventstore/integration_test.go` (if not done in Task 6)
+- `pkg/eventstore/integration_test.go` (completed in Task 6)
 - `pkg/domain/bank/integration_test.go`
 - `test_cli.sh`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-23
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-23 (Wave 5 Complete: CLI Implementation - 83% overall)
+**Last Updated**: 2026-01-23 (Task 10 Complete: Integration Testing - 92% overall)

@@ -13,10 +13,10 @@
 - **Wave 2 (Core Components)**: ✅ 2/2 Complete
 - **Wave 3 (Integration)**: ✅ 1/1 Complete
 - **Wave 4 (Domain Logic)**: ✅ 2/2 Complete
-- **Wave 5 (User Interface)**: ⬜ 0/1 Complete
+- **Wave 5 (User Interface)**: ✅ 1/1 Complete
 - **Wave 6 (Testing & Docs)**: ⬜ 0/2 Complete
 
-**Overall Progress**: 9/12 tasks complete (75%)
+**Overall Progress**: 10/12 tasks complete (83%)
 
 ---
 
@@ -230,24 +230,24 @@
 
 ## Wave 5: User Interface
 
-### ⬜ Task 9: CLI Implementation
+### ✅ Task 9: CLI Implementation
 **Complexity**: Medium
 **Dependencies**: Tasks 6, 8
 **Can Start**: After Tasks 6, 8 complete
 
 **Deliverables**:
-- [ ] Initialize EventStore in main()
-- [ ] Implement all command handlers (append, get-stream, get-all, bank)
-- [ ] Add output formatting for events and balances
-- [ ] Add error handling
-- [ ] Test manual workflow
+- [x] Initialize EventStore in main()
+- [x] Implement all command handlers (append, get-stream, get-all, bank)
+- [x] Add output formatting for events and balances
+- [x] Add error handling
+- [x] Test manual workflow
 
 **Files Updated**:
 - `cmd/eventstore/main.go`
 
-**Status**: Not Started
-**Assigned To**: -
-**Completed**: -
+**Status**: Completed
+**Assigned To**: Claude
+**Completed**: 2026-01-23
 
 ---
 
@@ -397,4 +397,4 @@
 
 ---
 
-**Last Updated**: 2026-01-22 (Wave 4 Complete: Bank Domain - 75% overall)
+**Last Updated**: 2026-01-23 (Wave 5 Complete: CLI Implementation - 83% overall)

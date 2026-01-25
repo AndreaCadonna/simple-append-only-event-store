@@ -1,30 +1,84 @@
 # Append-Only Event Store
 
-A simple, educational implementation of an append-only event store in Go with a bank account domain example.
+A simple event store implementation in Go to learn event sourcing principles. Uses a bank account example to demonstrate how current state is rebuilt from immutable events.
 
-## Status
+## What is this?
 
-🚧 Under Development
+An educational project showing how event sourcing works:
+- Events are stored in an append-only log (never modified or deleted)
+- Current state is calculated by replaying all events
+- Example: account balance = sum of all deposits minus all withdrawals
 
-## Project Overview
+## Goal
 
-This project implements a minimal event sourcing system with:
-- Append-only event log persisted to disk
-- In-memory index for fast stream queries
-- Bank account domain as a practical example
-- CLI for interacting with the event store
+Learn event sourcing fundamentals through a working implementation with zero dependencies (stdlib only).
 
-## Quick Start
+## Setup & Run
 
-*Documentation will be added as implementation progresses*
+```bash
+# Clone the repository
+git clone https://github.com/AndreaCadonna/simple-append-only-event-store.git
+cd simple-append-only-event-store
+
+# Build
+go build -o eventstore ./cmd/eventstore
+
+# Run example commands
+./eventstore bank open acc-1 "Alice"
+./eventstore bank deposit acc-1 10000
+./eventstore bank withdraw acc-1 2500
+./eventstore bank balance acc-1
+```
+
+## Commands
+
+```bash
+# Bank operations
+./eventstore bank open <accountId> <owner>
+./eventstore bank deposit <accountId> <amount-in-cents>
+./eventstore bank withdraw <accountId> <amount-in-cents>
+./eventstore bank balance <accountId>
+
+# View events
+./eventstore get-stream <streamId>
+./eventstore get-all
+
+# Generic events
+./eventstore append <streamId> <eventType> '{"json":"data"}'
+```
+
+## Run Tests
+
+```bash
+go test ./...              # All tests
+./test_cli.sh              # CLI integration tests
+```
 
 ## Architecture
 
-See `architecture.md` for detailed design decisions and architecture overview.
+- **Event**: Immutable record of something that happened
+- **DiskStorage**: Append-only file (`data/events.log`)
+- **Index**: In-memory map for fast stream lookups
+- **EventStore**: Coordinates storage and queries
+- **Bank Domain**: Example showing event replay to calculate balance
 
-## Progress
+See `architecture.md` and `ADR.md` for detailed design decisions.
 
-See `TASK_TRACKER.md` for implementation progress and task status.
+## Key Concepts Demonstrated
+
+- Event sourcing (state from events, not database updates)
+- Event replay (rebuild state by applying events in order)
+- Append-only storage (immutability)
+- Stream-per-aggregate pattern
+- Command/event separation
+
+## Limitations
+
+Educational project - not for production:
+- Single process only (no file locking)
+- Optimized for <10K events
+- No snapshots (always replay from beginning)
+- No subscriptions or real-time notifications
 
 ## License
 
